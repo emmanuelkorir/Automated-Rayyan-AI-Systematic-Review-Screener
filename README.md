@@ -1,6 +1,6 @@
 # Automated Rayyan-AI Systematic Review Screener
 
-Rayyan-AI is a tool for screening articles in systematic reviews using AI (Google Gemini) and the Rayyan platform. It helps researchers efficiently include or exclude articles based on strict PICO criteria, reducing manual workload and improving reproducibility.
+[Rayyan-AI](https://rayyan.ai/) is a tool for screening articles in systematic reviews using AI (Google Gemini) and the Rayyan platform. It helps researchers efficiently include or exclude articles based on strict PICO criteria, reducing manual workload and improving reproducibility.
 
 ## What does this project do?
 
@@ -74,7 +74,7 @@ The script interacts with the Rayyan API to fetch and update article statuses. I
 ## Tech Stack
 
 **Client:** Playwright (for browser automation)  
-**AI:** Google Gemini  
+**AI:** Google Gemini SDK
 **Server:** Python (asyncio, requests)
 
 ## Authors

@@ -47,7 +47,19 @@ python main.py
 ```
 
 - The script will guide you through authentication and setup if needed.
+- Run the main script and navigate to the screen page to fetch relevant api keys.
 - It will fetch undecided articles, use Gemini AI to screen them, and update their status in Rayyan.
+
+Run the duplicates_resolver.py script to resolve duplicates:
+
+```bash
+1. python main.py
+
+2. python duplicates_resolver.py
+```
+
+- Run the `python main.py` script to start the fetch relevant api keys
+- Then, run the `python duplicates_resolver.py` script to resolve duplicates in your Rayyan review.
 
 ## Python Requirements
 

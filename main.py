@@ -86,11 +86,13 @@ async def get_ai_decision(article: dict) -> dict:
 
     if not title or not abstract:
         return {"decision": "exclude", "reason": "Missing Data"}
+    
+    # gemini-2.0-flash-lite (run first), gemini-2.5-pro-preview-06-05, gemini-1.5-flash, 
 
     prompt = create_ai_prompt(title, abstract)
     try:
         response = await asyncio.to_thread(
-            client.models.generate_content, model="gemini-2.0-flash-lite", contents=prompt
+            client.models.generate_content, model="gemini-2.5-flash-lite-preview-06-17", contents=prompt
         )
         if response.text is None:
             print(f"   [AI_WARN] AI response text is None for article {article.get('id', 'N/A')}")
